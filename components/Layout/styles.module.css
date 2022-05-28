@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+}
+
+.container aside {
+ width: 25rem;
+ min-height: 100vh;   
+}
+
+.container main {
+   border: 1px solid blue;
+   width: 100%;
+}

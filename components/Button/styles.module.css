@@ -1,0 +1,33 @@
+
+.button {
+    outline: none;
+    cursor: pointer;
+}
+
+.solid {
+    color: #fff;
+    background-color: var(--pri-clr);
+    border: none;
+    padding: .4rem 1.5rem;
+    border-radius: .9rem;
+}
+
+.link {
+    background: none;
+    border: none;
+    color: var(--pri-clr);
+}
+
+.outline {
+    background: none;
+    border: 1px solid var(--pri-clr);
+    padding: .4rem 1.5rem;
+    color: var(--pri-clr);
+    border-radius: .9rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.outline:hover {
+    background-color: var(--pri-clr);
+    color: #fff;
+}
