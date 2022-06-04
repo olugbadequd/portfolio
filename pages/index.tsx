@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { jobExperience, certifications } from '../data/constants'
 
 const Home: NextPage = () => {
   return (
@@ -23,30 +24,22 @@ const Home: NextPage = () => {
     <div className={styles.certificationsBox}>
       <h3>Certifications</h3>
       <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
+        {certifications.map((item, idx)=>{
+          return (
+            <li key={idx}>{item}</li>
+          )
+        })}
       </ul>
     </div>
 
     <div className={styles.jobExperience}>
       <h3>Job Experience</h3>
       <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam nam eaque.</li>
+        {jobExperience.map((item, idx)=>{
+          return (
+            <li key={idx}>{item}</li>
+          )
+        })}
       </ul>
     </div>
 

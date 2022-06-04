@@ -1,0 +1,16 @@
+.blogItem {
+    border-top: 1px dashed grey;
+    padding: .8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogItem p:first-child {
+    color: var(--pri-clr);
+    cursor: pointer;
+}
+
+.blogItem p:last-child {
+    font-size: 14px;
+}
